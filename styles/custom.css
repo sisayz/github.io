@@ -1,0 +1,95 @@
+/* Base Styles */
+@keyframes gradient-pulse {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.animated-gradient-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, 
+        rgba(10, 10, 10, 0.8), 
+        rgba(26, 26, 26, 0.8),
+        rgba(58, 58, 58, 0.8));
+    background-size: 400% 400%;
+    animation: gradient-pulse 15s ease infinite;
+    z-index: 1;
+}
+
+.section-title {
+    @apply text-3xl font-bold text-cyan-400 mb-8 text-center;
+    text-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+}
+
+/* Navigation */
+.nav-link {
+    @apply text-gray-300 px-4 py-2 rounded-lg transition-all duration-300;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.nav-link:hover {
+    @apply bg-blue-600/20 text-cyan-300;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+}
+
+/* Project Cards */
+.project-card {
+    @apply bg-gray-800/50 p-6 rounded-xl border border-gray-700 transition-transform duration-300;
+}
+
+.project-card:hover {
+    @apply transform scale-105;
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.2);
+}
+
+/* Skill Radial Progress */
+.radial-progress {
+    @apply inline-block;
+    --value: 0;
+    --size: 6rem;
+    --thickness: 6px;
+}
+
+/* Image Effects */
+.project-image {
+    @apply w-full h-48 object-cover rounded-t-xl 
+           transition-transform duration-300 
+           hover:scale-105;
+}
+
+.skill-icon {
+    @apply w-16 h-16 object-contain mb-4 
+           filter grayscale hover:grayscale-0 
+           transition-all duration-500;
+}
+
+.testimonial-avatar {
+    @apply w-24 h-24 rounded-full border-4 
+           border-cyan-400/50 shadow-lg 
+           hover:scale-110 transition-transform;
+}
+
+/* Background Image Layer */
+.ai-pattern-layer {
+    @apply fixed inset-0 w-full h-full object-cover;
+    mix-blend-mode: soft-light;
+    opacity: 0.15;
+}
+/* Fixed Navigation */
+nav {
+    @apply shadow-xl;
+}
+
+.nav-link-active {
+    @apply bg-blue-600/30 text-cyan-300 !important;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+}
+
+/* Content Area */
+#content {
+    min-height: calc(100vh - 8rem);
+}

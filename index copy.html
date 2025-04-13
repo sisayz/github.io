@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead AI Architect | John Doe</title>
+    
+    <!-- Core CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet" href="styles/testimonials.css">
+    <link rel="stylesheet" href="styles/blog.css">
+</head>
+
+<body class="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900">
+  <!-- Background Elements -->
+  <div id="particles-js" class="fixed inset-0 z-0"></div>
+  <div class="animated-gradient-overlay"></div>
+  <img src="assets/images/ai-background.avif" 
+       class="fixed inset-0 w-full h-full object-cover opacity-20 z-0"
+       alt="AI Background Pattern">
+       
+    <!-- Animated Background -->
+    <!-- <div id="particles-js" class="fixed inset-0 z-0"></div>
+    <div class="animated-gradient-overlay"></div> -->
+
+    <!-- Main Content -->
+    <div class="relative z-10 container mx-auto px-4 py-8">
+        
+        <!-- Header -->
+        <header class="text-center mb-16" data-aos="fade-down">
+            <button id="resumeDownload" 
+                    class="hvr-glow px-6 py-2 bg-cyan-600 text-white rounded-full absolute top-4 right-4"
+                    onclick="trackDownload()">
+                Download Architect Resume (PDF)
+            </button>
+            
+            <h1 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 mb-4 animate-pulse">
+                AI Solutions Architect
+            </h1>
+            <p class="text-xl text-gray-300 font-mono">Building Enterprise-grade AI Systems</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="mb-12 flex justify-center space-x-6" data-aos="zoom-in">
+            <a href="#projects" class="nav-link">Innovations</a>
+            <a href="#expertise" class="nav-link">Stack</a>
+            <a href="#experience" class="nav-link">Journey</a>
+            <a href="#testimonials" class="nav-link">Validation</a>
+            <a href="#blog" class="nav-link">Insights</a>
+            <a href="#contact" class="nav-link">Connect</a>
+        </nav>
+
+        <!-- Projects Section -->
+        <section id="projects">
+          <div class="grid..." id="projects-container">
+              <!-- Project 1 -->
+              <div class="project-card">
+                  <img src="assets/images/neural-arch.avif" 
+                       class="project-image"
+                       alt="Neural Architecture Project">
+                  <h3>Deep Learning Framework</h3>
+                  <p>Custom neural architecture search engine...</p>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="project-card">
+                  <img src="assets/images/data-pipeline.jpeg"
+                       class="project-image" 
+                       alt="Data Pipeline System">
+                  <h3>Enterprise Data Pipeline</h3>
+                  <p>Real-time ETL system processing 1M+ events/sec...</p>
+              </div>
+          </div>
+      </section>
+            
+            <!-- Live Demo -->
+             <section id="live-demo">
+            <div class="project-card col-span-full mt-12" data-aos="flip-left">
+                <div class="aspect-video bg-gray-800 rounded-lg overflow-hidden">
+                    <iframe 
+                        src="https://codepen.io/your-demo" 
+                        class="w-full h-full"
+                        loading="lazy"
+                    ></iframe>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-cyan-400">Production NLP System</h3>
+                    <p class="text-gray-300">Real-time text processing pipeline</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise">
+          <div class="grid..." id="skills-container">
+              <div class="skill-item">
+                  <img src="assets/images/ml-architecture.jpeg" 
+                       class="skill-icon"
+                       alt="Machine Learning Architecture">
+                  <h4>ML System Design</h4>
+                  <p>Architected 15+ production systems</p>
+              </div>
+          </div>
+      </section>
+
+            
+            <!-- GitHub Chart -->
+        <section id="github-chart">
+            <div class="col-span-full mt-12" data-aos="zoom-in">
+                <h3 class="text-2xl text-cyan-400 mb-4 text-center">Code Activity</h3>
+                <img 
+                    src="https://ghchart.rshah.org/yourgithub" 
+                    alt="GitHub Contributions"
+                    class="rounded-lg border border-gray-700 w-full hover:scale-105 transition-transform">
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="mb-20" data-aos="fade-right">
+            <h2 class="section-title">Professional Timeline</h2>
+            <div class="timeline" id="timeline-container">
+                <!-- Timeline items -->
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials">
+          <div class="testimonial-card">
+              <img src="assets/images/avatar1.jpeg" 
+                   alt="Client 1"
+                   class="testimonial-avatar">
+              <blockquote>
+                  "Reduced our model training costs by 40%..."
+              </blockquote>
+          </div>
+      </section>
+
+        <!-- Blog -->
+        <section id="blog" class="mb-20" data-aos="fade-down">
+            <h2 class="section-title">Technical Writings</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="blog-container">
+                <!-- JS-loaded posts -->
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="mb-20" data-aos="zoom-in">
+            <h2 class="section-title">Collaborate</h2>
+            <form id="contact-form" class="max-w-lg mx-auto">
+                <div class="mb-6">
+                    <input type="email" required class="form-input" placeholder="Your Email">
+                </div>
+                <div class="mb-6">
+                    <textarea class="form-input h-32" placeholder="Project Requirements"></textarea>
+                </div>
+                <button type="submit" class="hvr-glow px-8 py-3 bg-blue-600 text-white rounded-lg">
+                    Send Proposal
+                </button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts/particles-config.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/analytics.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.blog-card {
+    @apply transform transition-all duration-300 hover:-translate-y-2;
+    box-shadow: 0 2px 15px rgba(59, 130, 246, 0.1);
+}
+
+.blog-card:hover {
+    @apply shadow-xl;
+}
+
+.blog-card h3 {
+    @apply transition-colors duration-300 hover:text-blue-400;
+}
+
+.blog-card p {
+    @apply text-gray-400;
+}
+
+.blog-card img {
+    @apply transition-transform duration-300 hover:scale-105;
+}

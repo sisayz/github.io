@@ -1,0 +1,12 @@
+.testimonial-card {
+    @apply transform transition-all duration-300 hover:scale-[1.02];
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.1);
+}
+
+.testimonial-card:hover {
+    @apply border-cyan-400/30;
+}
+
+.testimonial-card blockquote {
+    @apply relative before:content-['"'] before:text-4xl before:text-cyan-400 before:absolute before:-top-4 before:-left-2;
+}
